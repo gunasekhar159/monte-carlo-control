@@ -27,9 +27,12 @@ After the policy converges, use the function np.argmax to find the optimal polic
 
 Q: The Q-table. axis: The axis along which to find the maximum value.
 
+## MONTE CARLO CONTROL FUNCTION
+```
 Developed by: M.GUNASEKHAR
 Reg no:212221240014
-## MONTE CARLO CONTROL FUNCTION
+
+
 from tqdm import tqdm
 def mc_control(env, gamma = 1.0, init_alpha = 0.5, min_alpha = 0.01,
                alpha_decay_ratio = 0.5, init_epsilon = 1.0, min_epsilon = 0.1,
@@ -68,7 +71,7 @@ def mc_control(env, gamma = 1.0, init_alpha = 0.5, min_alpha = 0.01,
   return Q, V, pi
 
 
-
+```
 ## OUTPUT:
 <img width="692" alt="image" src="https://github.com/gunasekhar159/monte-carlo-control/assets/95043391/10fbae6c-93c0-46e9-ad40-06fbc1eb25ba">
 
